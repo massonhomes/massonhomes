@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Not Found — Masson Homes</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<style>
+.error-page{
+  min-height:100vh;
+  background:var(--warm-white);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:80px 40px;text-align:center;
+}
+.error-logo{margin-bottom:72px;width:260px}
+.error-number{
+  font-family:var(--serif);font-size:clamp(6rem, 16vw, 10rem);
+  color:var(--gold);font-weight:400;line-height:1;letter-spacing:-0.02em;
+  margin-bottom:8px;
+}
+.error-title{
+  font-family:var(--serif);font-size:clamp(1.8rem, 4vw, 2.6rem);
+  color:var(--charcoal);font-weight:400;margin-bottom:24px;
+}
+.error-title em{font-style:italic;color:var(--gold-dark)}
+.error-divider{width:48px;height:1px;background:var(--gold);margin:0 auto 32px}
+.error-message{
+  font-size:1.05rem;color:var(--body-text);line-height:1.7;
+  max-width:480px;margin:0 auto 48px;font-weight:400;
+}
+.error-ctas{display:flex;gap:16px;flex-wrap:wrap;justify-content:center}
+@media (max-width:720px){
+  .error-page{padding:60px 20px}
+  .error-logo{width:200px;margin-bottom:56px}
+  .error-ctas{flex-direction:column;width:100%;max-width:320px}
+  .error-ctas a{width:100%}
+}
+</style>
+</head>
+<body>
+
+<main class="error-page">
+  <img src="/assets/logo-dark.svg" alt="Wynd Realty · Masson Homes" class="error-logo">
+  <div class="error-number">404</div>
+  <h1 class="error-title">Page not <em>found.</em></h1>
+  <div class="error-divider" aria-hidden="true"></div>
+  <p class="error-message">
+    The page you're looking for doesn't exist — it may have been moved, renamed, or the link may be broken. Let's get you back on track.
+  </p>
+  <div class="error-ctas">
+    <a href="/" class="btn-dark">Back To Home</a>
+    <a href="/#contact" class="btn-ghost">Contact Us</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-brand">MASSON HOMES</div>
+  <div class="footer-tagline">Sell your home. Keep your equity. Move on.</div>
+  <div class="footer-divider" aria-hidden="true"></div>
+  <div class="footer-compliance">
+    <p>&copy; 2026 Masson Homes LLC. All rights reserved.</p>
+    <p style="margin-top:14px"><strong>Masson Homes LLC</strong> operates as a DBA under <strong>Wynd Realty</strong>, a Georgia-licensed brokerage. GREC License H-55981.</p>
+  </div>
+</footer>
+
+</body>
+</html>
