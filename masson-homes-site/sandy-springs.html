@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Selling in Sandy Springs — Masson Homes</title>
+<meta name="description" content="Flat-fee, full-service home listings in Sandy Springs, North Metro Atlanta. Listed on FMLS." />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="interior">
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-mark" href="index.html" aria-label="Masson Homes home">
+        <img src="assets/mh-monogram-cream.png" alt="Masson Homes monogram" />
+        <span class="nav-word">Masson&nbsp;Homes</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="how-we-work.html">How we work</a>
+        <a href="pricing.html">Pricing</a>
+        <a class="current" href="where-we-work.html">Where we work</a>
+        <a href="guide.html">Free guide</a>
+        <a class="nav-cta" href="contact.html">Book a consultation</a>
+      </div>
+    </div>
+  </nav>
+  <header class="market-hero">
+    <div class="ph has-photo"><img class="ph-photo" src="assets/markets/sandy-springs.jpg" alt="Sandy Springs" /></div>
+    <div class="mh-overlay" aria-hidden="true"></div>
+    <div class="mh-content"><span class="eyebrow">North Metro Atlanta</span><h1>Sandy Springs</h1></div>
+  </header>
+  <main>
+    <section class="section"><div class="prose"><p class="lead reveal">City Springs, the Chattahoochee, and inside-the-perimeter convenience.</p><div class="reveal" style="margin-top:2rem;"><p>Sandy Springs offers an in-town feel just inside the perimeter &mdash; the civic and arts district at City Springs, parks and trails along the Chattahoochee, and a wide mix of homes from condominiums to established neighborhoods.</p><p>That range means pricing and positioning matter. We make sure your home is presented to the buyers most likely to want it.</p></div></div></section>
+    <section class="section tight" style="background:var(--paper); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+      <div class="wrap"><div class="section-head"><span class="eyebrow">Around Sandy Springs</span></div><ul class="landmarks reveal"><li>City Springs</li><li>Chattahoochee parks</li><li>Heritage Sandy Springs</li></ul></div>
+    </section>
+    <section class="section split">
+      <div class="wrap"><div class="split-grid">
+        <div class="split-copy reveal">
+          <span class="eyebrow">Selling in Sandy Springs</span>
+          <h2>Positioned for the right buyer.</h2>
+          <p>With such a varied market, accurate pricing and clear positioning do the heavy lifting. We combine a grounded pricing analysis with professional marketing so your home finds its buyer &mdash; while a flat fee keeps more of your equity with you.</p>
+          <a class="btn btn-ghost-dark" href="sell.html" style="margin-top:1.4rem;">Request a pricing analysis</a>
+        </div>
+        <div class="split-media ph has-photo reveal"><img class="ph-photo" src="assets/hero/hero-2.jpg" alt="" loading="lazy" /><div class="ph-frame"></div></div>
+      </div></div>
+    </section>
+    <section class="section empty-state" style="border-bottom:1px solid var(--line);">
+      <div class="wrap"><div class="section-head"><span class="eyebrow">Now on the market</span><h2 class="reveal">Active in Sandy Springs</h2><hr class="hairline" /></div>
+      <div class="empty-box reveal"><span class="ph-note">[ live FMLS feed &mdash; active Sandy Springs listings display here ]</span><p>Real listings only.</p></div></div>
+    </section>
+
+    <section class="section cta">
+      <div class="narrow">
+        <h2 class="reveal">Thinking about selling in <span class="gold">Sandy Springs?</span></h2>
+        <p class="reveal">Start with a fifteen-minute consultation about your home and your timeline.</p>
+        <a class="btn btn-gold reveal" href="contact.html">Schedule a consultation</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <img class="foot-mark" src="assets/mh-monogram-cream.png" alt="Masson Homes" />
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="index.html">Home</a><a href="how-we-work.html">How we work</a><a href="pricing.html">Pricing</a><a href="where-we-work.html">Where we work</a><a href="guide.html">The guide</a><a href="approach.html">The approach</a><a href="sell.html">Sell</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="firm">Wynd Realty</div>
+    <div class="firm-sub">Licensed Georgia Real Estate Brokerage</div>
+    <p class="disclosure">
+      Masson Homes is the flat-fee listing service of Rachel Masson, Licensed Agent with <strong>Wynd&nbsp;Realty,&nbsp;LLC</strong>.<br />
+      Broker Code WYND01 &middot; 3343 Peachtree Road, Ste.&nbsp;145-637, Atlanta, GA&nbsp;30326 &middot; 404.933.4017<br />
+      Georgia License H-55981 &middot; Managing Broker: Jeff&nbsp;Bergstrom &middot; Listed on FMLS
+    </p>
+    <p class="legal">
+      Educational and advertising content only &mdash; not legal, tax, or financial advice. Pricing analysis is not an appraisal. Service offerings and fees are subject to a signed listing agreement through Wynd&nbsp;Realty. All figures are illustrative; verify current information through current sources.
+    </p>
+    <p class="eho">Equal Housing Opportunity</p>
+  </footer>
+  <script>
+    (function(){ var nav=document.getElementById('nav'); if(!nav) return; var home=document.body.classList.contains('home'); function s(){ if(!home) return; if(window.scrollY>40)nav.classList.add('solid'); else nav.classList.remove('solid'); } window.addEventListener('scroll',s,{passive:true}); s(); })();
+    (function(){ var t=document.querySelector('.nav-toggle'),l=document.getElementById('navLinks'); if(t&&l){ t.addEventListener('click',function(){ var o=l.classList.toggle('open'); t.setAttribute('aria-expanded',o?'true':'false'); }); l.addEventListener('click',function(e){ if(e.target.tagName==='A'){ l.classList.remove('open'); t.setAttribute('aria-expanded','false'); } }); } })();
+    (function(){ var els=document.querySelectorAll('.reveal'); if(!('IntersectionObserver'in window)){ els.forEach(function(e){e.classList.add('in');}); return; } var io=new IntersectionObserver(function(en){ en.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target);} }); },{threshold:0.14}); els.forEach(function(e){io.observe(e);}); })();
+    (function(){
+      var slides=Array.prototype.slice.call(document.querySelectorAll('.hero-slide'));
+      if(!slides.length) return;
+      var caption=document.getElementById('heroCaption'), dotsWrap=document.getElementById('heroDots');
+      var i=0, timer=null, reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      slides.forEach(function(s,idx){ var b=document.createElement('button'); b.setAttribute('role','tab'); b.setAttribute('aria-label', s.getAttribute('data-caption')||('Slide '+(idx+1))); if(idx===0)b.classList.add('active'); b.addEventListener('click',function(){ go(idx); restart(); }); dotsWrap.appendChild(b); });
+      var dots=Array.prototype.slice.call(dotsWrap.children);
+      function go(n){ slides[i].classList.remove('is-active'); dots[i].classList.remove('active'); i=n%slides.length; slides[i].classList.add('is-active'); dots[i].classList.add('active'); var c=slides[i].getAttribute('data-caption'); if(caption)caption.textContent='[ '+c+' ]'; }
+      function next(){ go(i+1); } function restart(){ if(reduce)return; clearInterval(timer); timer=setInterval(next,5000); }
+      if(!reduce) restart();
+    })();
+    (function(){
+      var price=document.getElementById('calcPrice'), rate=document.getElementById('calcRate');
+      if(!price||!rate) return;
+      var priceVal=document.getElementById('calcPriceVal'), rateVal=document.getElementById('calcRateVal');
+      var tiers=Array.prototype.slice.call(document.querySelectorAll('.calc-tier'));
+      var outComm=document.getElementById('calcComm'), outFee=document.getElementById('calcFee'), outKeep=document.getElementById('calcKeep');
+      var fee=8000;
+      function fmt(n){ return '$'+Math.round(n).toLocaleString('en-US'); }
+      function update(){
+        var p=+price.value, r=+rate.value;
+        priceVal.textContent=fmt(p);
+        rateVal.textContent=(r%1===0? r.toFixed(0): r.toFixed(2))+'%';
+        var comm=p*r/100;
+        outComm.textContent=fmt(comm);
+        outFee.textContent=fmt(fee);
+        outKeep.textContent=fmt(Math.max(0,comm-fee));
+      }
+      price.addEventListener('input',update); rate.addEventListener('input',update);
+      tiers.forEach(function(b){ b.addEventListener('click',function(){ tiers.forEach(function(x){x.classList.remove('active');}); b.classList.add('active'); fee=+b.getAttribute('data-fee'); update(); }); });
+      update();
+    })();
+  </script>
+</body>
+</html>
