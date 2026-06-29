@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /assets/hero-video.mp4
-
-Sitemap: https://www.massonhomes.com/sitemap.xml
