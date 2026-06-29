@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Request a Pricing Analysis — Masson Homes</title>
+<meta name="description" content="Request a no-cost pricing analysis for your North Atlanta home. A pricing analysis, not an appraisal." />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="interior">
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-mark" href="index.html" aria-label="Masson Homes home">
+        <img src="assets/mh-monogram-cream.png" alt="Masson Homes monogram" />
+        <span class="nav-word">Masson&nbsp;Homes</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="navLinks">
+        <a href="how-we-work.html">How we work</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="where-we-work.html">Where we work</a>
+        <a href="guide.html">Free guide</a>
+        <a class="nav-cta" href="contact.html">Book a consultation</a>
+      </div>
+    </div>
+  </nav>
+  <header class="page-banner">
+    <span class="eyebrow">For sellers</span>
+    <h1>Request a<br />pricing analysis</h1>
+    <p class="lede">A grounded look at where your home should list &mdash; a pricing analysis, not an appraisal.</p>
+    <hr class="hairline" />
+  </header>
+  <main>
+    <section class="section"><div class="wrap"><div class="guide-grid">
+      <div class="guide-copy reveal">
+        <span class="eyebrow">What you&rsquo;ll get</span>
+        <h2>Where the market puts <span class="gold">your home</span></h2>
+        <p>Share a few details and we will prepare a pricing analysis based on current comparable activity in your area, along with a clear sense of what a flat-fee sale would look like for you.</p>
+        <p>It is an estimate to inform your decision, not a formal appraisal. There is no cost and no obligation.</p>
+      </div>
+      <form class="form-card reveal" action="https://formspree.io/f/mwvwgqol" method="POST">
+        <span class="fe">Request a pricing analysis</span>
+        <input type="hidden" name="form_source" value="sell_page" />
+        <input type="hidden" name="form_type" value="pricing_analysis" />
+        <div class="field-row">
+          <div class="field"><label for="fn">First name</label><input id="fn" type="text" name="first_name" autocomplete="given-name" required /></div>
+          <div class="field"><label for="ln">Last name</label><input id="ln" type="text" name="last_name" autocomplete="family-name" /></div>
+        </div>
+        <div class="field"><label for="em">Email</label><input id="em" type="email" name="email" autocomplete="email" required /></div>
+        <div class="field"><label for="ph">Phone (optional)</label><input id="ph" type="tel" name="phone" autocomplete="tel" /></div>
+        <div class="field"><label for="addr">Property address</label><input id="addr" type="text" name="property_address" autocomplete="street-address" required /></div>
+        <div class="field"><label for="time">Timeline</label>
+          <select id="time" name="timeline"><option value="">Select one</option><option>Ready now</option><option>1&ndash;3 months</option><option>3&ndash;6 months</option><option>Just exploring</option></select>
+        </div>
+        <div class="field"><label for="note">Anything we should know? (optional)</label><textarea id="note" name="notes"></textarea></div>
+        <button class="btn btn-navy" type="submit">Request my pricing analysis</button>
+        <p class="fp">By submitting, you agree we may contact you about your request. Educational content only &mdash; not legal, tax, or financial advice. Pricing analysis is not an appraisal.</p>
+      </form>
+    </div></div></section>
+
+    <section class="section cta">
+      <div class="narrow">
+        <h2 class="reveal">Rather start with a <span class="gold">conversation?</span></h2>
+        <p class="reveal">Book a fifteen-minute consultation instead &mdash; we will cover pricing there too.</p>
+        <a class="btn btn-gold reveal" href="contact.html">Schedule a consultation</a>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <img class="foot-mark" src="assets/mh-monogram-cream.png" alt="Masson Homes" />
+    <nav class="foot-nav" aria-label="Footer">
+      <a href="index.html">Home</a><a href="how-we-work.html">How we work</a><a href="pricing.html">Pricing</a><a href="where-we-work.html">Where we work</a><a href="guide.html">The guide</a><a href="approach.html">The approach</a><a href="sell.html">Sell</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="firm">Wynd Realty</div>
+    <div class="firm-sub">Licensed Georgia Real Estate Brokerage</div>
+    <p class="disclosure">
+      Masson Homes is the flat-fee listing service of Rachel Masson, Licensed Agent with <strong>Wynd&nbsp;Realty,&nbsp;LLC</strong>.<br />
+      Broker Code WYND01 &middot; 3343 Peachtree Road, Ste.&nbsp;145-637, Atlanta, GA&nbsp;30326 &middot; 404.933.4017<br />
+      Georgia License H-55981 &middot; Managing Broker: Jeff&nbsp;Bergstrom &middot; Listed on FMLS
+    </p>
+    <p class="legal">
+      Educational and advertising content only &mdash; not legal, tax, or financial advice. Pricing analysis is not an appraisal. Service offerings and fees are subject to a signed listing agreement through Wynd&nbsp;Realty. All figures are illustrative; verify current information through current sources.
+    </p>
+    <p class="eho">Equal Housing Opportunity</p>
+  </footer>
+  <script>
+    (function(){ var nav=document.getElementById('nav'); if(!nav) return; var home=document.body.classList.contains('home'); function s(){ if(!home) return; if(window.scrollY>40)nav.classList.add('solid'); else nav.classList.remove('solid'); } window.addEventListener('scroll',s,{passive:true}); s(); })();
+    (function(){ var t=document.querySelector('.nav-toggle'),l=document.getElementById('navLinks'); if(t&&l){ t.addEventListener('click',function(){ var o=l.classList.toggle('open'); t.setAttribute('aria-expanded',o?'true':'false'); }); l.addEventListener('click',function(e){ if(e.target.tagName==='A'){ l.classList.remove('open'); t.setAttribute('aria-expanded','false'); } }); } })();
+    (function(){ var els=document.querySelectorAll('.reveal'); if(!('IntersectionObserver'in window)){ els.forEach(function(e){e.classList.add('in');}); return; } var io=new IntersectionObserver(function(en){ en.forEach(function(x){ if(x.isIntersecting){ x.target.classList.add('in'); io.unobserve(x.target);} }); },{threshold:0.14}); els.forEach(function(e){io.observe(e);}); })();
+    (function(){
+      var slides=Array.prototype.slice.call(document.querySelectorAll('.hero-slide'));
+      if(!slides.length) return;
+      var caption=document.getElementById('heroCaption'), dotsWrap=document.getElementById('heroDots');
+      var i=0, timer=null, reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      slides.forEach(function(s,idx){ var b=document.createElement('button'); b.setAttribute('role','tab'); b.setAttribute('aria-label', s.getAttribute('data-caption')||('Slide '+(idx+1))); if(idx===0)b.classList.add('active'); b.addEventListener('click',function(){ go(idx); restart(); }); dotsWrap.appendChild(b); });
+      var dots=Array.prototype.slice.call(dotsWrap.children);
+      function go(n){ slides[i].classList.remove('is-active'); dots[i].classList.remove('active'); i=n%slides.length; slides[i].classList.add('is-active'); dots[i].classList.add('active'); var c=slides[i].getAttribute('data-caption'); if(caption)caption.textContent='[ '+c+' ]'; }
+      function next(){ go(i+1); } function restart(){ if(reduce)return; clearInterval(timer); timer=setInterval(next,5000); }
+      if(!reduce) restart();
+    })();
+    (function(){
+      var price=document.getElementById('calcPrice'), rate=document.getElementById('calcRate');
+      if(!price||!rate) return;
+      var priceVal=document.getElementById('calcPriceVal'), rateVal=document.getElementById('calcRateVal');
+      var tiers=Array.prototype.slice.call(document.querySelectorAll('.calc-tier'));
+      var outComm=document.getElementById('calcComm'), outFee=document.getElementById('calcFee'), outKeep=document.getElementById('calcKeep');
+      var fee=8000;
+      function fmt(n){ return '$'+Math.round(n).toLocaleString('en-US'); }
+      function update(){
+        var p=+price.value, r=+rate.value;
+        priceVal.textContent=fmt(p);
+        rateVal.textContent=(r%1===0? r.toFixed(0): r.toFixed(2))+'%';
+        var comm=p*r/100;
+        outComm.textContent=fmt(comm);
+        outFee.textContent=fmt(fee);
+        outKeep.textContent=fmt(Math.max(0,comm-fee));
+      }
+      price.addEventListener('input',update); rate.addEventListener('input',update);
+      tiers.forEach(function(b){ b.addEventListener('click',function(){ tiers.forEach(function(x){x.classList.remove('active');}); b.classList.add('active'); fee=+b.getAttribute('data-fee'); update(); }); });
+      update();
+    })();
+  </script>
+</body>
+</html>
